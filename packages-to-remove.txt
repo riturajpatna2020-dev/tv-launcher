@@ -1,0 +1,22 @@
+# Packages that `tv.sh debloat` / `tv.bat debloat` will remove for the current user.
+# One package per line. Lines starting with # are ignored (comments must be on their own line).
+#
+# Removal uses `pm uninstall -k --user 0`: the app is hidden/removed for user 0 only, the system
+# partition is untouched, and `tv.sh restore` (or a factory reset) brings everything back.
+#
+# EVERYTHING BELOW IS COMMENTED OUT ON PURPOSE. Run `tv.sh audit` first, review the generated
+# audit-system.txt, then uncomment only what you are sure about.
+#
+# NEVER remove: your stock launcher before Aurora works as Home, com.android.tv.settings,
+# com.google.android.tvlauncher (unless Aurora is already set as Home), the Play Store,
+# com.google.android.gms, com.google.android.gsf, the TV's input/HDMI/CEC services, or the
+# remote/voice-button service. When unsure, leave it.
+#
+# Likely-safe Google extras on most Android TVs (check they exist in your audit first):
+# com.google.android.videos
+# com.google.android.youtube.tvmusic
+# com.google.android.play.games
+# com.google.android.feedback
+#
+# Xiaomi / PatchWall / ad-service packages differ per TV and software version, so none are
+# listed here. Paste the contents of audit-system.txt and the list can be tailored to your TV.
